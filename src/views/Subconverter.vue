@@ -236,6 +236,7 @@ export default {
           Surge3: "surge&ver=3",
         },
         customBackend: {
+          "自用安全版本" : "https://psub.mrerobot.com/sub?",
           "花云提供" : "https://api.huacloud.xyz/sub?",
           "sublink提供" : "https://api.sublink.dev/sub?",
           "品云提供": "https://v.id9.cc/sub?",
@@ -246,6 +247,7 @@ export default {
           "本地局域网版": "http://127.0.0.1:25500/sub?",
         },
         backendOptions: [
+          {value: "https://psub.mrerobot.com/sub?"},
           {value: "https://api.huacloud.xyz/sub?"},
           {value: "https://api.sublink.dev/sub?"},
           {value: "https://v.id9.cc/sub?"},
@@ -268,6 +270,11 @@ export default {
                     label: "适用于自建节点 (与Github同步)",
                     value:
                       "https://raw.githubusercontent.com/cncherisher/aclclash/master/own.ini"
+                },
+				{
+                    label: "适用于回国节点 (与Github同步)",
+                    value:
+                      "https://raw.githubusercontent.com/cncherisher/aclclash/master/backcn.ini"
                 },
             ]
           },
