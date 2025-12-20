@@ -240,7 +240,44 @@ export default {
       // 配置选项
       options: {
         clientTypes: CLIENT_TYPES,
-        backendOptions: [{ value: "http://127.0.0.1:25500/sub?" }],
+        backendOptions: [
+          {
+            label: "自建Provider后端",
+            value: "https://subapi.mrerobot.com/sub?"
+          },
+          {
+            label: "Provider后端作者提供",
+            value: "https://api.asailor.org/sub?"
+          },
+          {
+            label: "sub-web作者提供",
+            value: "https://api.wcc.best/sub?"
+          },
+          {
+            label: "lhie1提供",
+            value: "https://api.dler.io/sub?"
+          },
+          {
+            label: "肥羊提供",
+            value: "https://url.v1.mk/sub?"
+          },
+          {
+            label: "sublink提供",
+            value: "https://api.sublink.dev/sub?"
+          },
+          {
+            label: "无名提供",
+            value: "https://www.nameless13.com/sub?"
+          },
+          {
+            label: "xjz提供",
+            value: "https://sub.xjz.im/sub?"
+          },
+          {
+            label: "localhost本地版",
+            value: "http://127.0.0.1:25500/sub?"
+          }
+        ],
         remoteConfig: REMOTE_CONFIGS
       },
 
